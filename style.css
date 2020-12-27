@@ -1,0 +1,305 @@
+/********* General **********/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+  line-height: 1.6;
+  color: #012126;
+  font-size: 1.1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
+}
+
+a {
+  color: #02373f;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+/********* Navbar **********/
+
+.navbar {
+  font-size: 1.1rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.navbar .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.navbar .logo {
+  width: 200px;
+}
+
+.navbar ul {
+  justify-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar ul li {
+  list-style-type: none;
+}
+
+.navbar a {
+  padding: 0.5rem 1rem;
+}
+
+.navbar a:hover {
+  color: #75b4bf;
+  border-bottom: 1px solid #75b4bf;
+}
+
+/********* Hero **********/
+
+.hero {
+  padding: 7rem 0;
+  background-image: url(img/hero_dentist.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: #184f68;
+}
+
+.hero p {
+  margin: 1rem 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #184f68;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  cursor: pointer;
+  fotn-size: 1.1rem;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  background: #75b4bf;
+}
+
+/********* About us **********/
+
+.about {
+  padding: 5rem 0;
+}
+
+.about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.about p {
+  margin: 1rem 0;
+}
+
+/********* About us **********/
+
+.more-info {
+  position: relative;
+  background: url(img/pic_02.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 600px;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(24, 79, 104, 0.7);
+}
+
+.more-info-inner {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  max-width: 900px;
+  padding: 2rem 1rem;
+}
+
+.more-info-inner h3 {
+  font-size: 4.5rem;
+}
+
+.more-info-inner p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+/********* About us **********/
+
+#boxes {
+  margin: 7rem 1rem;
+}
+
+#boxes h2 {
+  color: #184f68;
+  text-align: center;
+}
+
+#boxes .box {
+  float: left;
+  width: 30%;
+  text-align: center;
+  padding: 20px 10px;
+  border: 1px solid #75b4bf;
+  border-bottom: 7px solid #75b4bf;
+  margin: 10px;
+}
+
+#boxes .box img {
+  width: 100px;
+  margin: 10px;
+}
+
+#boxes .box h3 {
+  color: #184f68;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/********* Contact **********/
+
+.section-contact {
+  position: relative;
+  background: url(img/map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.contact-inner {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  max-width: 860px;
+  padding: 5rem 1rem;
+}
+
+.contact-inner h2 {
+  margin-top: 1.2rem;
+  font-size: 1.5rem;
+}
+
+.contact-inner p {
+  margin-top: 1.2rem;
+  font-size: 1.5rem;
+}
+
+/********* Footer **********/
+
+.section-footer {
+  background-color: #184f68;
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.section-footer .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.section-footer .container img {
+  width: 300px;
+}
+
+.section-footer h4 {
+  margin-bottom: 0.9rem;
+  font-size: 1.3rem;
+}
+
+.section-footer a {
+  line-height: 1.9;
+  color: #ccc;
+}
+
+/********* Responsive **********/
+
+@media (max-width: 700px) {
+  .hero .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .about .container {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    text-align: center;
+  }
+  .more-info h3 {
+    font-size: 2rem;
+  }
+  #boxes .box {
+    width: 100%;
+  }
+  .section-footer {
+    padding: 2rem 0;
+  }
+  .section-footer .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
